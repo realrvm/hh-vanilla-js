@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(hsl(0, 0%, 89%));
+  --white: hsl(0, 0%, 100%);
+  --green: hsl(164, 57%, 55%);
+}
+
+*,
+*::before,
+*::after {
+  outline: none;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.trendup {
+  padding: 2rem 4rem;
+  color: var(--black);
+  width: 30rem;
+}
+
+.trendup__insert-code {
+  font-weight: 700;
+}
+
+.trendup__textarea {
+  max-width: 100%;
+  width: 100%;
+  min-height: 10rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: hsl(0, 0%, 89%);
+  border-radius: 0.2rem;
+}
+
+.trendup__button,
+.trendup__send {
+  width: 100%;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.trendup__button:hover,
+.trendup__send:hover {
+  opacity: 0.8;
+}
+
+.trendup__template>p {
+  font-weight: 700;
+}
+
+.trendup__result {
+  margin-bottom: 1rem;
+}
+
+.trendup__result p {
+  margin: 0.5rem 0;
+}
+
+.trendup__result ul {
+  margin: 0;
+}
+
+.trendup__result li {
+  font-size: 0.8rem;
+}

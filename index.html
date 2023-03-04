@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main class="trendup">
+    <p class="trendup__insert-code">Вставьте код для распознавания</p>
+    <form class="trendup__form">
+      <textarea class="trendup__textarea" id="textarea" name="textarea" placeholder="Код..." required></textarea>
+      <button type="submit" class="trendup__button">Запустить</button>
+    </form>
+    <div class='trendup__template'>
+      <p>Результат распознавания:</p>
+      <div class="trendup__result"></div>
+    </div>
+    <button type="button" class="trendup__send">
+      Сохранить результат на сервер
+    </button>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
